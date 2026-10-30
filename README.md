@@ -1,35 +1,9 @@
-# AI Strict Reviewer
+# AI Strict Reviewer | AI 严格审稿组员
 
-AI Strict Reviewer is a bilingual, evidence-based review Skill for scientific manuscripts, engineering papers, and PhD theses. It checks methodology, evidence, statistics, interpretation, and whether conclusions are supported. It distinguishes what a document reports from what has been independently checked, and it does not silently rewrite the manuscript.
+判断科研方法、证据、统计与结论是否科学上站得住。支持普通科研论文、硕博士论文、投稿前、Reviewer-2 模式、Claim Audit 和 Viva 风险评估。
 
-## Files
+核心规则：**Claim → Evidence → Reasoning → Conclusion**；严格不等于硬挑问题。
 
-```text
-ai-strict-reviewer/
-├── SKILL.md
-└── references/
-    ├── phd-thesis-review.md
-    ├── cfd-wind-tunnel-extension.md
-    └── output-templates.md
-```
+调用示例：
 
-Keep the `references/` folder beside `SKILL.md`. Install the complete `ai-strict-reviewer` folder in your AI agent's Skills directory, or upload it as a ZIP in a host that supports custom Skills. The exact installation steps depend on the host.
-
-## Basic use
-
-Upload or enable the Skill, provide the manuscript, then ask:
-
-```text
-Use AI Strict Reviewer.
-
-Review this manuscript in Full Scientific Review mode.
-Focus on methodology, evidence, statistics, and claim support.
-Do not rewrite the manuscript.
-```
-
-For a thesis, you can start with:
-
-```text
-调用 AI Strict Reviewer，按 PhD Thesis Review 模式审这篇博士论文。
-先建立审查框架，然后停止；不要改写正文。
-```
+> 调用 AI Strict Reviewer。Full Scientific Review。先检查方法、证据和统计，不直接修改论文；长论文分阶段审查。
