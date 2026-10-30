@@ -181,3 +181,7 @@ This Skill works independently. Five member names indicate **responsibilities**,
 - Keep local specialist rules authoritative: scientific Reviewer uses **Severity**; Quality Inspector uses **Impact**. All members exchange `ID, owner, location/version, issue, evidence, source/verification status, consequence, action, author decision, workflow state`.
 - If the relevant tool/member is unavailable, report a specific pending task; do not pretend it was delegated or completed.
 - Do not invoke every specialist mechanically. Use the smallest adequate combination and track source/version changes before rerunning affected checks.
+
+## Optional v3 research-group interface
+
+For coordination with the 17 research Skills, load `references/research-group-interop-v3.md` only if needed. Existing member-specific `references/coordination-protocol.md` and `references/specialist-routing.md` remain authoritative. Do not imply every specialist has been run. This Skill remains independent; one root-issue owner, version-matched evidence and targeted rechecks only.
